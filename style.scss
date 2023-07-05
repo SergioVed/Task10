@@ -72,10 +72,12 @@ body{
             height: 65px;
             border: none;
             border-radius: 50px;
+            outline: none;
+            font-size: 1.3em;
         }
         &__input::placeholder{
             padding-left: 20px;
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #BDBDBDCC;
         }
         &__button{
