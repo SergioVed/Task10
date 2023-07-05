@@ -64,26 +64,24 @@ body{
         }
     }
     &__search-form{
-        position: relative;
         display: flex;
         justify-content: center;
+        background-color: #fff;
+        border-radius: 50px;
+        width: 630px;
+        margin: auto;
         &__input{
-            width: 650px;
-            height: 65px;
+            width: 85%;
+            height: 60px;
             border: none;
-            border-radius: 50px;
             outline: none;
             font-size: 1.3em;
         }
         &__input::placeholder{
-            padding-left: 20px;
             font-size: 1.3em;
             color: #BDBDBDCC;
         }
         &__button{
-            position: absolute;
-            top: 18px;
-            left: 1235px;
             background: transparent;
             border: none;
         }
