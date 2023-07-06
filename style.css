@@ -43,7 +43,7 @@ body {
 }
 .header__logo {
   width: 90vw;
-  margin: 50px auto 50px auto;
+  margin: 100px auto 50px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,17 +67,16 @@ body {
 .header__search-form {
   display: flex;
   justify-content: center;
-  background-color: #fff;
-  border-radius: 50px;
-  width: 630px;
-  margin: auto;
+  position: relative;
 }
 .header__search-form__input {
-  width: 85%;
-  height: 60px;
+  width: 650px;
+  height: 65px;
   border: none;
   outline: none;
+  border-radius: 50px;
   font-size: 1.3em;
+  padding-left: 30px;
 }
 .header__search-form__input::-moz-placeholder {
   font-size: 1.3em;
@@ -88,6 +87,120 @@ body {
   color: rgba(189, 189, 189, 0.8);
 }
 .header__search-form__button {
+  position: relative;
   background: transparent;
   border: none;
+}
+.header__search-form__button img {
+  position: absolute;
+  top: 20px;
+  left: -45px;
+}
+.header__links {
+  display: flex;
+  justify-content: space-between;
+  width: 660px;
+  margin: 20px auto;
+}
+.header__links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header__footer, .header__footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 40%;
+}
+.header__footer__links {
+  width: 120px;
+  margin-left: 50px;
+  align-items: center;
+  height: 60px;
+}
+.header__footer p, .header__footer__links p {
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  margin-right: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+@media screen and (min-device-width: 461px) and (max-device-width: 600px) {
+  .header__nav {
+    height: 80px;
+    margin: 0px 15px 0px 15px;
+  }
+  .header__nav__button-menu {
+    width: 60px;
+    height: 50px;
+    background: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4em;
+    border: none;
+  }
+  .header__nav__button-users {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+  }
+  .header__nav__button-users__sign, .header__nav__button-users__login {
+    width: 110px;
+    height: 35px;
+    background: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  .header__logo {
+    margin: 110px auto 40px auto;
+  }
+  .header__logo h1 {
+    font-size: 5.3em;
+  }
+  .header__logo p {
+    font-size: 1.2em;
+  }
+  .header__search-form__input {
+    width: 400px;
+    height: 55px;
+    font-size: 1.1em;
+  }
+  .header__search-form__input::-moz-placeholder {
+    font-size: 1.1em;
+  }
+  .header__search-form__input::placeholder {
+    font-size: 1.1em;
+  }
+  .header__search-form__button {
+    position: relative;
+  }
+  .header__search-form__button img {
+    position: absolute;
+    top: 16px;
+    left: -40px;
+  }
+  .header__links {
+    width: 410px;
+    margin: 20px auto;
+  }
+  .header__links a {
+    font-size: 0.8em;
+  }
+  .header__footer, .header__footer__links {
+    height: 37%;
+  }
+  .header__footer__links {
+    margin-left: 30px;
+    height: 60px;
+  }
+  .header__footer p, .header__footer__links p {
+    margin-right: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

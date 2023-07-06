@@ -42,7 +42,7 @@ body{
     }
     &__logo{
         width: 90vw;
-        margin: 50px auto 50px auto;
+        margin: 100px auto 50px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -66,24 +66,128 @@ body{
     &__search-form{
         display: flex;
         justify-content: center;
-        background-color: #fff;
-        border-radius: 50px;
-        width: 630px;
-        margin: auto;
+        position: relative;
         &__input{
-            width: 85%;
-            height: 60px;
+            width: 650px;
+            height: 65px;
             border: none;
             outline: none;
+            border-radius: 50px;
             font-size: 1.3em;
+            padding-left: 30px;
         }
         &__input::placeholder{
             font-size: 1.3em;
             color: #BDBDBDCC;
         }
         &__button{
+            position: relative;
             background: transparent;
             border: none;
+            img{
+                position: absolute;
+                top: 20px;
+                left: -45px;
+            }
+        }
+    }
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        width: 660px;
+        margin: 20px auto;
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 40%;
+        &__links{
+            width: 120px;
+            margin-left: 50px;
+            align-items: center;
+            @extend .header__footer;
+            height: 60px;
+        }
+        p{
+            font-family: Open Sans;
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+            margin-right: 50px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+}
+@media screen and (min-device-width: 461px) and (max-device-width: 600px){
+    .header{
+        &__nav{
+            height: 80px;
+            margin: 0px 15px 0px 15px;
+            &__button-menu{
+                @include layoutButton(60px, 50px, transparent, transparent, #fff, 1.4em);
+                border: none;
+            }
+            &__button-users{
+                display: flex;
+                justify-content: space-around;
+                width: 250px;
+                &__sign{
+                    @include layoutButton(110px, 35px, transparent, transparent, #fff, 1.2em);
+                }
+            }
+        }
+        &__logo{
+            margin: 110px auto 40px auto;
+            h1{
+                font-size: 5.3em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+        &__search-form{
+            &__input{
+                width: 400px;
+                height: 55px;
+                font-size: 1.1em;
+            }
+            &__input::placeholder{
+                font-size: 1.1em;
+            }
+            &__button{
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 16px;
+                    left: -40px;
+                }
+            }
+        }
+        &__links{
+            width: 410px;
+            margin: 20px auto;
+            a{
+                font-size: 0.8em;
+            }
+        }
+        &__footer{
+            height: 37%;
+            &__links{
+                margin-left: 30px;
+                height: 60px;
+            }
+            p{
+                margin-right: 30px;
+            }
         }
     }
 }
